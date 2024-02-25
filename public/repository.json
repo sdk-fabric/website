@@ -1,0 +1,62 @@
+{
+  "twitter": {
+    "go": {
+      "repositoryName": "twitter-go",
+      "lang": "go",
+      "langDisplayName": "Go",
+      "github": "https:\/\/github.com\/sdk-fabric\/twitter-go",
+      "package": null
+    },
+    "java": {
+      "repositoryName": "twitter-java",
+      "lang": "java",
+      "langDisplayName": "Java",
+      "github": "https:\/\/github.com\/sdk-fabric\/twitter-java",
+      "package": "https:\/\/mvnrepository.com\/artifact\/org.sdkfabric\/twitter"
+    },
+    "javascript": {
+      "repositoryName": "twitter-javascript",
+      "lang": "javascript",
+      "langDisplayName": "Javascript",
+      "github": "https:\/\/github.com\/sdk-fabric\/twitter-javascript",
+      "package": "https:\/\/www.npmjs.com\/package\/@sdkfabric\/twitter"
+    },
+    "php": {
+      "repositoryName": "twitter-php",
+      "lang": "php",
+      "langDisplayName": "PHP",
+      "github": "https:\/\/github.com\/sdk-fabric\/twitter-php",
+      "package": "https:\/\/packagist.org\/packages\/sdkfabric\/twitter"
+    }
+  },
+  "discord": {
+    "go": {
+      "repositoryName": "discord-go",
+      "lang": "go",
+      "langDisplayName": "Go",
+      "github": "https:\/\/github.com\/sdk-fabric\/discord-go",
+      "package": null
+    },
+    "java": {
+      "repositoryName": "discord-java",
+      "lang": "java",
+      "langDisplayName": "Java",
+      "github": "https:\/\/github.com\/sdk-fabric\/discord-java",
+      "package": "https:\/\/mvnrepository.com\/artifact\/org.sdkfabric\/discord"
+    },
+    "javascript": {
+      "repositoryName": "discord-javascript",
+      "lang": "javascript",
+      "langDisplayName": "Javascript",
+      "github": "https:\/\/github.com\/sdk-fabric\/discord-javascript",
+      "package": "https:\/\/www.npmjs.com\/package\/@sdkfabric\/discord"
+    },
+    "php": {
+      "repositoryName": "discord-php",
+      "lang": "php",
+      "langDisplayName": "PHP",
+      "github": "https:\/\/github.com\/sdk-fabric\/discord-php",
+      "package": "https:\/\/packagist.org\/packages\/sdkfabric\/discord"
+    }
+  }
+}

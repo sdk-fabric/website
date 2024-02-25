@@ -1,0 +1,20 @@
+- question: What does this service provide?
+  answer:
+    <p>APIgen generates fully customizable APIs based on <a href="https://www.fusio-project.org/">Fusio</a>. Fusio is an
+    open source API management platform which helps to create innovative API solutions. The generated source code is fully
+    working and you can also use it as a great starting point to bootstrap your API project.</p>
+- question: What is the difference to BaaS provider like Firebase, Supabase, etc.?
+  answer:
+    <p>In contrast to most Backend-as-a-Service providers APIgen uses a generative approach, this means instead fo defining
+    your data structure through a backend you define the data structure at our generator. Then we generate based on this
+    data structure a complete API tailored to your use case which you can use to CRUD those entities. This has also the
+    great advantage, that you can easily customize every endpoint to your needs.</p>
+- question: How much does this service cost?
+  answer:
+    <p>Our service is free, you only need to register an account in order to use our generator. For power users there is
+    also an option to obtain a basic or pro plan which allows you to create more projects. Fusio is open-source (Apache2),
+    please consider a <a href="https://github.com/sponsors/chriskapp">donation</a> if you want to support our project.</p>
+- question: I have found a problem in the generated code?
+  answer:
+    <p>If you have found a problem in the generated code please create an issue directly at our
+    <a href="https://github.com/apioo/fusio">GitHub repository</a>.</p>

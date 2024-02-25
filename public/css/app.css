@@ -1,0 +1,7 @@
+textarea {
+  font-family: monospace;
+}
+
+.form-control, .btn {
+  border-radius: 0;
+}
