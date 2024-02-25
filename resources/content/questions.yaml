@@ -1,20 +1,29 @@
-- question: What does this service provide?
+- question: What problem do you try to solve?
   answer:
-    <p>APIgen generates fully customizable APIs based on <a href="https://www.fusio-project.org/">Fusio</a>. Fusio is an
-    open source API management platform which helps to create innovative API solutions. The generated source code is fully
-    working and you can also use it as a great starting point to bootstrap your API project.</p>
-- question: What is the difference to BaaS provider like Firebase, Supabase, etc.?
+    <p>Integrating APIs from external services into your app is still a complicated and time consuming task since every
+    company provides its own SDK which has specific behaviours and sometimes SDKs are also not available for a programming
+    language, in this case we mostly rely on SDKs which are developed by the community.</p>
+    <p>The SDK Fabric project tries to solve this by providing an open infrastructure to automatically generate SDKs for
+    every API. This means to build an SDK you only need to describe the API at the TypeHub platform and based on this we
+    generate a fitting SDK for each supported programming language and also submit the SDK to each package manager.
+    TypeHub provides an visual editor so that also non-developers can help to build the SDK.</p>
+- question: Why is my programming language not supported?
   answer:
-    <p>In contrast to most Backend-as-a-Service providers APIgen uses a generative approach, this means instead fo defining
-    your data structure through a backend you define the data structure at our generator. Then we generate based on this
-    data structure a complete API tailored to your use case which you can use to CRUD those entities. This has also the
-    great advantage, that you can easily customize every endpoint to your needs.</p>
-- question: How much does this service cost?
+    <p>Our roadmap contains adding C# and Python as supported programming language. Please let us know what programming
+    language you would like to see next.</p>
+- question: How can I support this project?
   answer:
-    <p>Our service is free, you only need to register an account in order to use our generator. For power users there is
-    also an option to obtain a basic or pro plan which allows you to create more projects. Fusio is open-source (Apache2),
-    please consider a <a href="https://github.com/sponsors/chriskapp">donation</a> if you want to support our project.</p>
-- question: I have found a problem in the generated code?
+    <p>At first the best way to support the project is by simply using and star the SDKs which we manage. Then it also
+    really helps if you add missing operations or types to the <a href="https://app.typehub.cloud/d/sdkfabric">specifications</a>
+    managed at <a href="https://typehub.cloud/">TypeHub</a>. If you want to financially support our project please take
+    a look at our <a href="https://github.com/sponsors/chriskapp">GitHub sponsoring</a>.</p>
+- question: How can my company use this service?
   answer:
-    <p>If you have found a problem in the generated code please create an issue directly at our
-    <a href="https://github.com/apioo/fusio">GitHub repository</a>.</p>
+    <p>Currently there is no direct way to use our service since in the first step we only try to manage popular SDKs to
+    gain visibility. But please <a href="https://www.apioo.de/en/contact">contact us</a> if you are interested in
+    using our service for your company API so that we know that there is a demand for such a service.</p>
+- question: I have found a problem in the generated SDK?
+  answer:
+    <p>If you have found a problem in the generated SDK please create an issue directly at our
+    <a href="https://github.com/sdk-fabric/website">GitHub repository</a>. For private topics you can also use our
+    <a href="https://www.apioo.de/en/contact">contact form</a>.</p>

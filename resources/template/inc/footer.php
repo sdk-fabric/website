@@ -7,8 +7,8 @@
         <p class="font-weight-bold">Links</p>
         <ul class="list-unstyled text-small">
           <li class="mb-2"><a href="<?php echo $router->getAbsolutePath([\App\Controller\Index::class, 'show']); ?>" class="text-white">Home</a></li>
-          <li class="mb-2"><a href="<?php echo $router->getAbsolutePath([\App\Controller\Integration::class, 'show']); ?>" class="text-white">Integration</a></li>
           <li class="mb-2"><a href="<?php echo $router->getAbsolutePath([\App\Controller\Faq::class, 'show']); ?>" class="text-white">FAQ</a></li>
+          <li class="mb-2"><a href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>" class="text-white">Submit</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1 mb-3">
@@ -17,14 +17,13 @@
           <li class="mb-2"><a href="https://typehub.cloud/" class="text-white">TypeHub</a></li>
           <li class="mb-2"><a href="https://typeschema.org/" class="text-white">TypeSchema</a></li>
           <li class="mb-2"><a href="https://typeapi.org/" class="text-white">TypeAPI</a></li>
+          <li class="mb-2"><a href="https://sdkgen.app/" class="text-white">SDKgen</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1 mb-3">
         <p class="font-weight-bold">API</p>
         <ul class="list-unstyled text-small">
-          <li class="mb-2"><a href="https://api.sdkgen.app/" class="text-white">API</a></li>
-          <li class="mb-2"><a href="https://app.typehub.cloud/d/sdkgen/sdk" class="text-white">SDK</a></li>
-          <li class="mb-2"><a href="https://api.sdkgen.app/apps/redoc" class="text-white">Documentation</a></li>
+          <li class="mb-2"><a href="<?php echo $base; ?>/projects.json" class="text-white">Projects</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1 mb-3">

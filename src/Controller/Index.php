@@ -12,7 +12,7 @@ use Symfony\Component\Yaml\Yaml;
 
 class Index extends ControllerAbstract
 {
-    private const CACHE_KEY = 'features';
+    private const CACHE_KEY = 'sdk';
 
     private ReverseRouter $reverseRouter;
     private CacheItemPoolInterface $cache;
@@ -27,15 +27,15 @@ class Index extends ControllerAbstract
     #[Path('/')]
     public function show(): mixed
     {
-        $repositories = $this->cache->getItem(self::CACHE_KEY);
-        if (!$repositories->isHit()) {
-            $repositories->set(Yaml::parse(file_get_contents(__DIR__ . '/../../public/repository.json')));
-            $this->cache->save($repositories);
+        $projects = $this->cache->getItem(self::CACHE_KEY);
+        if (!$projects->isHit()) {
+            $projects->set(Yaml::parse(file_get_contents(__DIR__ . '/../../public/projects.json')));
+            $this->cache->save($projects);
         }
 
         $data = [
             'method' => explode('::', __METHOD__),
-            'repositories' => $repositories->get(),
+            'projects' => $projects->get(),
         ];
 
         $templateFile = __DIR__ . '/../../resources/template/index.php';

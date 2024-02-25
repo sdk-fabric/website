@@ -2,14 +2,28 @@
 
 <h1 class="display-4 mt-5 text-center">Introduction</h1>
 
-<p class="lead text-center mt-5 mb-5">
-  The SDk Fabric tries to create
+<p class="lead text-center mt-5 mb-5">The SDK Fabric project has an ambitious goal to revolutionize the API integration process by providing
+  an open infrastructure and unified way to generate SDKs. Our service uses on the one hand the <a href="https://app.typehub.cloud/d/sdkfabric">TypeHub</a>
+  platform, where every API specification is managed and on the other hand the <a href="https://github.com/sdk-fabric">SDK Fabric</a>
+  GitHub organization where every SDK repository is placed.</p>
 
-</p>
+<div class="pt-3 pe-3 text-center">
+  <img src="<?php echo $base; ?>/img/sdk/client-typescript.png" width="100">
+  <img src="<?php echo $base; ?>/img/sdk/client-java.png" width="100">
+  <img src="<?php echo $base; ?>/img/sdk/client-php.png" width="100">
+  <img src="<?php echo $base; ?>/img/sdk/client-go.png" width="100">
+  <img src="<?php echo $base; ?>/img/sdk/client-csharp.png" width="100">
+  <img src="<?php echo $base; ?>/img/sdk/client-python.png" width="100">
+</div>
 
 <hr>
 
-<h1 class="display-4 mt-5 mb-5 text-center">Packages</h1>
+<h1 class="display-4 mt-5 mb-5 text-center">SDK</h1>
+
+<p class="lead text-center mt-5 mb-5">
+  Our project currently manages the following popular SDKs. You can also <a href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>">submit</a>
+  an API which we should integrate into our service.
+</p>
 
 <table class="table">
   <thead>
@@ -29,7 +43,7 @@
   </tr>
   </thead>
   <tbody>
-  <?php foreach ($repositories as $name => $languages): ?>
+  <?php foreach ($projects as $name => $languages): ?>
     <tr>
       <td>
         <h1 class="fs-3"><a href="https://app.typehub.cloud/d/sdkfabric/<?php echo $name; ?>" class="p-1"><?php echo $name; ?></a></h1>
