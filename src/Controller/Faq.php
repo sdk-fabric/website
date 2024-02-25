@@ -34,6 +34,7 @@ class Faq extends ControllerAbstract
         }
 
         $data = [
+            'title' => 'FAQ | SDK Fabric',
             'method' => explode('::', __METHOD__),
             'questions' => $questions->get(),
         ];

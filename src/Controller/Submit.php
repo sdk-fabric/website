@@ -23,6 +23,7 @@ class Submit extends ControllerAbstract
     public function show(): mixed
     {
         $data = [
+            'title' => 'Submit | SDK Fabric',
             'method' => explode('::', __METHOD__),
         ];
 

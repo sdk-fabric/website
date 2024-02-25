@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="SDK Fabric provides an open infrastructure to automatically generate SDKs for every API.">
   <meta name="keywords" content="SDK Generator, Client Generator, API Generator, OpenAPI Generator, Model Generator, Code Generator">
-  <title>Generate open SDKs at scale | SDK Fabric</title>
+  <title><?php echo $title ?? 'Generate open SDKs at scale | SDK Fabric'; ?></title>
   <link rel="preload" href="<?php echo $base; ?>/css/app.min.css" as="style" />
   <link rel="preload" href="<?php echo $base; ?>/js/app.min.js" as="script" />
   <link rel="stylesheet" href="<?php echo $base; ?>/css/app.min.css">
-  <link rel="canonical" href="<?php echo $router->getUrl($method); ?>">
+  <link rel="canonical" href="<?php echo $router->getUrl($method, (array) ($urlParameters ?? [])); ?>">
   <link rel="icon" type="image/png" href="<?php echo $base; ?>/img/logo/logo_white.png">
   <script async src="<?php echo $base; ?>/js/app.min.js"></script>
   <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-XM1W1FDSST"></script>-->
