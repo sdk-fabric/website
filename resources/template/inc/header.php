@@ -33,9 +33,6 @@
         <li class="nav-item">
           <a class="nav-link" href="<?php echo $router->getAbsolutePath([\App\Controller\Faq::class, 'show']); ?>">FAQ</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>">Submit</a>
-        </li>
       </ul>
     </div>
   </div>
