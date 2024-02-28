@@ -21,8 +21,7 @@
 <h1 class="display-4 mt-5 mb-5 text-center">SDK</h1>
 
 <p class="lead text-center mt-5 mb-5">
-  Our project currently manages the following popular SDKs. You can also <a href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>">submit</a>
-  an API which we should integrate into our service.
+  Our project currently manages the following SDKs.
 </p>
 
 <table class="table">
