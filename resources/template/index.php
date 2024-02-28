@@ -3,7 +3,7 @@
 <h1 class="display-4 mt-5 text-center">Introduction</h1>
 
 <p class="lead text-center mt-5 mb-5">The SDK Fabric project has an ambitious goal to revolutionize the API integration process by providing
-  an open infrastructure and unified way to generate SDKs. Our service uses on the one hand the <a href="https://app.typehub.cloud/d/sdkfabric">TypeHub</a>
+  an open infrastructure and no-code way to generate SDKs at scale. Our service uses on the one hand the <a href="https://app.typehub.cloud/d/sdkfabric">TypeHub</a>
   platform, where every API specification is managed and on the other hand the <a href="https://github.com/sdk-fabric">SDK Fabric</a>
   GitHub organization where every SDK repository is placed.</p>
 
@@ -60,8 +60,5 @@
   <?php endforeach; ?>
   </tbody>
 </table>
-<div class="text-center mt-4 pt-4">
-  <a href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>" class="btn btn-lg btn-primary">Submit</a>
-</div>
 
 <?php include __DIR__ . '/inc/footer.php'; ?>

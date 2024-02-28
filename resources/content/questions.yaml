@@ -1,8 +1,9 @@
 - question: What problem do you try to solve?
   answer:
     <p>Integrating APIs from external services into your app is still a complicated and time consuming task since every
-    company provides its own SDK which has specific behaviours and sometimes SDKs are also not available for a programming
-    language, in this case we mostly rely on SDKs which are developed by the community.</p>
+    company provides its own SDK which has specific behaviours and often SDKs are not available in the fitting programming
+    language, in this case we mostly rely on SDKs which are developed by the community, which can become quickly outdated
+    or unmaintained.</p>
     <p>The SDK Fabric project tries to solve this by providing an open infrastructure to automatically generate SDKs for
     every API. This means to build an SDK you only need to describe the API at the TypeHub platform and based on this we
     generate a fitting SDK for each supported programming language and also submit the SDK to each package manager.
@@ -11,6 +12,11 @@
   answer:
     <p>Our roadmap contains adding C# and Python as supported programming language. Please let us know what programming
     language you would like to see next.</p>
+- question: How can I add a new SDK?
+  answer:
+    <p>Please use our <a href="https://www.apioo.de/en/contact">contact form</a> to suggest a new API. To speed up the
+    process you can also create a specification at <a href="https://typehub.cloud/">TypeHub</a> which describes
+    the API, then we can directly use this specification as starting point.</p>
 - question: How can I support this project?
   answer:
     <p>At first the best way to support the project is by simply using and star the SDKs which we manage. Then it also
