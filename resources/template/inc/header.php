@@ -12,12 +12,12 @@
   <link rel="canonical" href="<?php echo $router->getUrl($method, (array) ($urlParameters ?? [])); ?>">
   <link rel="icon" type="image/png" href="<?php echo $base; ?>/img/logo/logo_white.png">
   <script async src="<?php echo $base; ?>/js/app.min.js"></script>
-  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-XM1W1FDSST"></script>-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQTPSTZJ4S"></script>
   <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XM1W1FDSST', { 'anonymize_ip': true });
+      gtag('config', 'G-SQTPSTZJ4S', { 'anonymize_ip': true });
   </script>
 </head>
 <body>
