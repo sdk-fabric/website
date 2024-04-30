@@ -1,5 +1,12 @@
 {
   "twitter": {
+    "csharp": {
+      "repositoryName": "twitter-csharp",
+      "lang": "csharp",
+      "langDisplayName": "C#",
+      "github": "https:\/\/github.com\/sdk-fabric\/twitter-csharp",
+      "package": "https:\/\/www.nuget.org\/packages\/SdkFabric.Twitter"
+    },
     "go": {
       "repositoryName": "twitter-go",
       "lang": "go",
@@ -27,9 +34,23 @@
       "langDisplayName": "PHP",
       "github": "https://github.com/sdk-fabric/twitter-php",
       "package": "https://packagist.org/packages/sdkfabric/twitter"
+    },
+    "python": {
+      "repositoryName": "twitter-python",
+      "lang": "python",
+      "langDisplayName": "Python",
+      "github": "https:\/\/github.com\/sdk-fabric\/twitter-python",
+      "package": "https:\/\/pypi.org\/project\/sdkfabric-twitter"
     }
   },
   "discord": {
+    "csharp": {
+      "repositoryName": "discord-csharp",
+      "lang": "csharp",
+      "langDisplayName": "C#",
+      "github": "https:\/\/github.com\/sdk-fabric\/discord-csharp",
+      "package": "https:\/\/www.nuget.org\/packages\/SdkFabric.Discord"
+    },
     "go": {
       "repositoryName": "discord-go",
       "lang": "go",
@@ -57,6 +78,101 @@
       "langDisplayName": "PHP",
       "github": "https://github.com/sdk-fabric/discord-php",
       "package": "https://packagist.org/packages/sdkfabric/discord"
+    },
+    "python": {
+      "repositoryName": "discord-python",
+      "lang": "python",
+      "langDisplayName": "Python",
+      "github": "https:\/\/github.com\/sdk-fabric\/discord-python",
+      "package": "https:\/\/pypi.org\/project\/sdkfabric-discord"
+    }
+  },
+  "airtable": {
+    "csharp": {
+      "repositoryName": "airtable-csharp",
+      "lang": "csharp",
+      "langDisplayName": "C#",
+      "github": "https:\/\/github.com\/sdk-fabric\/airtable-csharp",
+      "package": "https:\/\/www.nuget.org\/packages\/SdkFabric.Airtable"
+    },
+    "go": {
+      "repositoryName": "airtable-go",
+      "lang": "go",
+      "langDisplayName": "Go",
+      "github": "https:\/\/github.com\/sdk-fabric\/airtable-go",
+      "package": null
+    },
+    "java": {
+      "repositoryName": "airtable-java",
+      "lang": "java",
+      "langDisplayName": "Java",
+      "github": "https:\/\/github.com\/sdk-fabric\/airtable-java",
+      "package": "https:\/\/mvnrepository.com\/artifact\/org.sdkfabric\/airtable"
+    },
+    "javascript": {
+      "repositoryName": "airtable-javascript",
+      "lang": "javascript",
+      "langDisplayName": "JavaScript",
+      "github": "https:\/\/github.com\/sdk-fabric\/airtable-javascript",
+      "package": "https:\/\/www.npmjs.com\/package\/@sdkfabric\/airtable"
+    },
+    "php": {
+      "repositoryName": "airtable-php",
+      "lang": "php",
+      "langDisplayName": "PHP",
+      "github": "https:\/\/github.com\/sdk-fabric\/airtable-php",
+      "package": "https:\/\/packagist.org\/packages\/sdkfabric\/airtable"
+    },
+    "python": {
+      "repositoryName": "airtable-python",
+      "lang": "python",
+      "langDisplayName": "Python",
+      "github": "https:\/\/github.com\/sdk-fabric\/airtable-python",
+      "package": "https:\/\/pypi.org\/project\/sdkfabric-airtable"
+    }
+  },
+  "notion": {
+    "csharp": {
+      "repositoryName": "notion-csharp",
+      "lang": "csharp",
+      "langDisplayName": "C#",
+      "github": "https:\/\/github.com\/sdk-fabric\/notion-csharp",
+      "package": "https:\/\/www.nuget.org\/packages\/SdkFabric.Notion"
+    },
+    "go": {
+      "repositoryName": "notion-go",
+      "lang": "go",
+      "langDisplayName": "Go",
+      "github": "https:\/\/github.com\/sdk-fabric\/notion-go",
+      "package": null
+    },
+    "java": {
+      "repositoryName": "notion-java",
+      "lang": "java",
+      "langDisplayName": "Java",
+      "github": "https:\/\/github.com\/sdk-fabric\/notion-java",
+      "package": "https:\/\/mvnrepository.com\/artifact\/org.sdkfabric\/notion"
+    },
+    "javascript": {
+      "repositoryName": "notion-javascript",
+      "lang": "javascript",
+      "langDisplayName": "JavaScript",
+      "github": "https:\/\/github.com\/sdk-fabric\/notion-javascript",
+      "package": "https:\/\/www.npmjs.com\/package\/@sdkfabric\/notion"
+    },
+    "php": {
+      "repositoryName": "notion-php",
+      "lang": "php",
+      "langDisplayName": "PHP",
+      "github": "https:\/\/github.com\/sdk-fabric\/notion-php",
+      "package": "https:\/\/packagist.org\/packages\/sdkfabric\/notion"
+    },
+    "python": {
+      "repositoryName": "notion-python",
+      "lang": "python",
+      "langDisplayName": "Python",
+      "github": "https:\/\/github.com\/sdk-fabric\/notion-python",
+      "package": "https:\/\/pypi.org\/project\/sdkfabric-notion"
     }
   }
 }

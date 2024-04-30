@@ -32,13 +32,17 @@
     <col width="150">
     <col width="150">
     <col width="150">
+    <col width="150">
+    <col width="150">
   </colgroup>
   <tr>
     <th>Name</th>
+    <th>C#</th>
     <th>Go</th>
     <th>Java</th>
     <th>Javascript</th>
     <th>PHP</th>
+    <th>Python</th>
   </tr>
   </thead>
   <tbody>
