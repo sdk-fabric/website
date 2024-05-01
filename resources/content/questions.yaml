@@ -1,22 +1,17 @@
 - question: What problem do you try to solve?
   answer:
     <p>Integrating APIs from external services into your app is still a complicated and time consuming task since every
-    company provides its own SDK which has specific behaviours and often SDKs are not available in the fitting programming
+    company provides its own SDK which has a specific behaviour and often SDKs are not available in the needed programming
     language, in this case we mostly rely on SDKs which are developed by the community, which can become quickly outdated
     or unmaintained.</p>
-    <p>The SDK Fabric project tries to solve this by providing an open infrastructure to automatically generate SDKs for
-    every API. This means to build an SDK you only need to describe the API at the TypeHub platform and based on this we
-    generate a fitting SDK for each supported programming language and also submit the SDK to each package manager.
-    TypeHub provides an visual editor so that also non-developers can help to build the SDK.</p>
+    <p>The SDK Fabric project tries to solve this problem by providing an open infrastructure to automatically generate
+    SDKs for every API. This means to build an SDK you only need to describe the API at the TypeHub platform and based
+    on this we generate a fitting SDK for each supported programming language and also submit the SDK to each package
+    manager. TypeHub provides an visual editor so that also non-developers can help to build and improve the SDK.</p>
 - question: Why is my programming language not supported?
   answer:
-    <p>Our roadmap contains adding C# and Python as supported programming language. Please let us know what programming
-    language you would like to see next.</p>
-- question: How can I add a new SDK?
-  answer:
-    <p>Please use our <a href="https://www.apioo.de/en/contact">contact form</a> to suggest a new API. To speed up the
-    process you can also create a specification at <a href="https://typehub.cloud/">TypeHub</a> which describes
-    the API, then we can directly use this specification as starting point.</p>
+    <p>Currently we focus on the 6 supported major programming languages C#, Go, Java, Javascript, PHP and Python. If
+    there is huge demand for another language we are of course open to extend our generator.</p>
 - question: How can I support this project?
   answer:
     <p>At first the best way to support the project is by simply using and star the SDKs which we manage. Then it also
@@ -25,11 +20,15 @@
     a look at our <a href="https://github.com/sponsors/chriskapp">GitHub sponsoring</a>.</p>
 - question: How can my company use this service?
   answer:
-    <p>Currently there is no direct way to use our service since in the first step we only try to manage popular SDKs to
-    gain visibility. But please <a href="https://www.apioo.de/en/contact">contact us</a> if you are interested in
+    <p>Take a look at the <a href="https://sdk-fabric.org/submit">Submit</a> page to see how you can submit your
+    specification. Also feel free to <a href="https://www.apioo.de/en/contact">contact us</a> if you are interested in
     using our service for your company API so that we know that there is a demand for such a service.</p>
 - question: I have found a problem in the generated SDK?
   answer:
     <p>If you have found a problem in the generated SDK please create an issue directly at our
     <a href="https://github.com/sdk-fabric/website">GitHub repository</a>. For private topics you can also use our
     <a href="https://www.apioo.de/en/contact">contact form</a>.</p>
+- question: Can we work together?
+  answer:
+    <p>Our project is currently in an early stage, please <a href="https://www.apioo.de/en/contact">contact us</a> if
+    you have ideas to work and grow with us.</p>

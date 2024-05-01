@@ -31,6 +31,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a class="nav-link" href="<?php echo $router->getAbsolutePath([\App\Controller\Contribute::class, 'show']); ?>">Contribute</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>">Submit</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="<?php echo $router->getAbsolutePath([\App\Controller\Faq::class, 'show']); ?>">FAQ</a>
         </li>
       </ul>
