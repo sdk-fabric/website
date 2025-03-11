@@ -1,4 +1,4 @@
-FROM php:8.2-apache
+FROM php:8.3-apache
 MAINTAINER Christoph Kappestein <christoph.kappestein@apioo.de>
 LABEL description="SDK Farbic website"
 
