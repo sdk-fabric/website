@@ -28,8 +28,7 @@
         <aside class="menu">
           <p class="menu-label">API</p>
           <ul class="menu-list">
-            <li><a href="https://api.apimon.app/" class="panel-block">API</a></li>
-            <li><a href="https://api.apimon.app/apps/redoc" class="panel-block">Documentation</a></li>
+            <li><a href="<?php echo $base; ?>/projects.json" class="panel-block">Projects</a></li>
           </ul>
         </aside>
       </div>
