@@ -22,36 +22,28 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="<?php echo $url; ?>"><img src="<?php echo $base; ?>/img/logo/logo_black.png" width="32" height="32" alt="SDKgen logo"> SDK Fabric</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo $router->getAbsolutePath([\App\Controller\Contribute::class, 'show']); ?>">Contribute</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>">Submit</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo $router->getAbsolutePath([\App\Controller\Faq::class, 'show']); ?>">FAQ</a>
-        </li>
-      </ul>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="<?php echo $url; ?>"><b>SDK Fabric</b></a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>">Submit</a>
+      <a class="navbar-item" href="<?php echo $router->getAbsolutePath([\App\Controller\Faq::class, 'show']); ?>">FAQ</a>
     </div>
   </div>
 </nav>
 
-
-<div class="p-5 text-center" style="background:url('<?php echo $base; ?>/img/header_bg.jpg');background-size:cover;background-repeat:no-repeat;background-position:top center;background-color:#222;">
-  <img src="<?php echo $base; ?>/img/logo/logo_white.png" height="150">
-  <p class="text-white lead mt-4 mb-4">
-    SDK Fabric provides an open infrastructure to automatically generate SDKs for every API.
-  </p>
-</div>
-
-
-<div class="container">
-
+<section class="section sdk-fabric-header">
+  <div class="container">
+    <h1 class="title has-text-light">SDK Fabric</h1>
+    <p class="subtitle has-text-light">An open infrastructure to automatically generate SDKs.</p>
+    <a href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>" class="button is-primary">Submit</a>
+  </div>
+</section>

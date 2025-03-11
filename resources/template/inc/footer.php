@@ -1,38 +1,47 @@
-</div>
 
-<footer class="bd-footer py-4 py-md-5 mt-5 bg-dark text-light">
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <p class="font-weight-bold">Links</p>
-        <ul class="list-unstyled text-small">
-          <li class="mb-2"><a href="<?php echo $router->getAbsolutePath([\App\Controller\Index::class, 'show']); ?>" class="text-white">Home</a></li>
-          <li class="mb-2"><a href="<?php echo $router->getAbsolutePath([\App\Controller\Faq::class, 'show']); ?>" class="text-white">FAQ</a></li>
-          <li class="mb-2"><a href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>" class="text-white">Submit</a></li>
-        </ul>
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-3">
+        <aside class="menu">
+          <p class="menu-label">Open-Source</p>
+          <ul class="menu-list">
+            <li><a href="https://github.com/apioo" class="panel-block">GitHub</a></li>
+            <li><a href="https://www.fusio-project.org/" class="panel-block">Fusio</a></li>
+            <li><a href="https://typehub.cloud/" class="panel-block">TypeHub</a></li>
+            <li><a href="https://typeschema.org/" class="panel-block">TypeSchema</a></li>
+            <li><a href="https://typeapi.org/" class="panel-block">TypeAPI</a></li>
+          </ul>
+        </aside>
       </div>
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <p class="font-weight-bold">External</p>
-        <ul class="list-unstyled text-small">
-          <li class="mb-2"><a href="https://typehub.cloud/" class="text-white">TypeHub</a></li>
-          <li class="mb-2"><a href="https://typeschema.org/" class="text-white">TypeSchema</a></li>
-          <li class="mb-2"><a href="https://typeapi.org/" class="text-white">TypeAPI</a></li>
-          <li class="mb-2"><a href="https://sdkgen.app/" class="text-white">SDKgen</a></li>
-        </ul>
+      <div class="column is-3">
+        <aside class="menu">
+          <p class="menu-label">Projects</p>
+          <ul class="menu-list">
+            <li><a href="https://sdkgen.app/" class="panel-block">SDKgen</a></li>
+            <li><a href="https://apigen.app/" class="panel-block">APIgen</a></li>
+            <li><a href="https://apimon.app/" class="panel-block">APImon</a></li>
+          </ul>
+        </aside>
       </div>
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <p class="font-weight-bold">API</p>
-        <ul class="list-unstyled text-small">
-          <li class="mb-2"><a href="<?php echo $base; ?>/projects.json" class="text-white">Projects</a></li>
-        </ul>
+      <div class="column is-3">
+        <aside class="menu">
+          <p class="menu-label">API</p>
+          <ul class="menu-list">
+            <li><a href="https://api.apimon.app/" class="panel-block">API</a></li>
+            <li><a href="https://api.apimon.app/apps/redoc" class="panel-block">Documentation</a></li>
+          </ul>
+        </aside>
       </div>
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <p class="font-weight-bold">Contact</p>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://discord.gg/eMrMgwsc6e" class="text-white">Discord</a></li>
-          <li class="mb-2"><a href="https://www.apioo.de/en/contact" class="text-white">Contact</a></li>
-          <li class="mb-2"><a href="https://www.apioo.de/en/imprint" class="text-white">Imprint</a></li>
-        </ul>
+      <div class="column is-3">
+        <aside class="menu">
+          <p class="menu-label">Contact</p>
+          <ul class="menu-list">
+            <li><a href="https://discord.gg/eMrMgwsc6e" class="panel-block">Discord</a></li>
+            <li><a href="https://www.apioo.de/en/contact" class="panel-block">Contact</a></li>
+            <li><a href="https://www.apioo.de/en/imprint" class="panel-block">Imprint</a></li>
+          </ul>
+        </aside>
       </div>
     </div>
   </div>

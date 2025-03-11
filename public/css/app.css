@@ -6,6 +6,14 @@ textarea {
   border-radius: 0;
 }
 
+.sdk-fabric-header {
+  background:url('../img/header_bg.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-color:#222;
+}
+
 .apioo-brand {
   background-color:#000;
   text-align: center;
