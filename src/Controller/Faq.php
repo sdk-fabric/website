@@ -29,7 +29,7 @@ class Faq extends ControllerAbstract
     {
         $questions = $this->cache->getItem(self::CACHE_KEY);
         if (!$questions->isHit()) {
-            $questions->set(Yaml::parse(file_get_contents(__DIR__ . '/../../resources/content/questions.yaml')));
+            $questions->set(Yaml::parse((string) file_get_contents(__DIR__ . '/../../resources/content/questions.yaml')));
             $this->cache->save($questions);
         }
 

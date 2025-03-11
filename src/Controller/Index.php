@@ -29,7 +29,7 @@ class Index extends ControllerAbstract
     {
         $cacheItem = $this->cache->getItem(self::CACHE_KEY);
         if (!$cacheItem->isHit()) {
-            $cacheItem->set(Yaml::parse(file_get_contents(__DIR__ . '/../../public/projects.json')));
+            $cacheItem->set(Yaml::parse((string) file_get_contents(__DIR__ . '/../../public/projects.json')));
             $this->cache->save($cacheItem);
         }
 
