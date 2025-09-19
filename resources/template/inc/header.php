@@ -12,12 +12,17 @@
   <link rel="canonical" href="<?php echo $router->getUrl($method, (array) ($urlParameters ?? [])); ?>">
   <link rel="icon" type="image/png" href="<?php echo $base; ?>/img/logo/logo_white.png">
   <script async src="<?php echo $base; ?>/js/app.min.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQTPSTZJ4S"></script>
   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-SQTPSTZJ4S', { 'anonymize_ip': true });
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://matomo.apioo.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '10']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
   </script>
 </head>
 <body>
