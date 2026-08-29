@@ -1,34 +1,28 @@
-- question: What problem do you try to solve?
+- question: What problem does SDK Fabric solve?
   answer:
-    <p>Integrating APIs from external services into your app is still a complicated and time consuming task since every
-    company provides its own SDK which has a specific behaviour and often SDKs are not available in the needed programming
-    language, in this case we mostly rely on SDKs which are developed by the community, which can become quickly outdated
-    or unmaintained.</p>
-    <p>The SDK Fabric project tries to solve this problem by providing an open infrastructure to automatically generate
-    SDKs for every API. This means to build an SDK you only need to describe the API at the TypeHub platform and based
-    on this we generate a fitting SDK for each supported programming language and also submit the SDK to each package
-    manager. TypeHub provides an visual editor so that also non-developers can help to build and improve the SDK.</p>
-- question: Why is my programming language not supported?
+    <p>Integrating external APIs into your application is often complicated and time-consuming. Every service provides its own SDK with different behaviors, and many APIs lack official SDKs for your target language, forcing developers to rely on community-maintained libraries that frequently become outdated or abandoned.</p>
+    <p>SDK Fabric solves this by providing an open infrastructure to automatically generate and maintain high-quality SDKs for popular APIs across all major programming languages. By maintaining API specifications on <a href="https://typehub.cloud/">TypeHub</a>, we automatically build, test, and publish generated SDKs directly to native package managers. TypeHub’s visual editor also allows both developers and non-technical contributors to build and refine API specs easily.</p>
+
+- question: How does the service work?
   answer:
-    <p>Currently we focus on the 6 supported major programming languages C#, Go, Java, Javascript, PHP and Python. If
-    there is huge demand for another language we are of course open to extend our generator.</p>
-- question: How can I support this project?
+    <p>To integrate your SDK repository with SDK Fabric, you add a <code>sync.yml</code> GitHub Action to your repository and register it in our application. By providing a Personal Access Token (PAT), SDK Fabric can automatically trigger workflows to roll out dependency updates, code improvements, and security patches across your managed SDK repositories seamlessly.</p>
+
+- question: Why isn't my programming language supported yet?
   answer:
-    <p>At first the best way to support the project is by simply using and star the SDKs which we manage. Then it also
-    really helps if you add missing operations or types to the <a href="https://app.typehub.cloud/d/sdkfabric">specifications</a>
-    managed at <a href="https://typehub.cloud/">TypeHub</a>. If you want to financially support our project please take
-    a look at our <a href="https://github.com/sponsors/chriskapp">GitHub sponsoring</a>.</p>
-- question: How can my company use this service?
+    <p>We currently focus on six core languages C#, Go, Java, JavaScript, PHP, and Python. We prioritize expandability based on developer interest, if there is strong demand for an additional target language, we are eager to extend our code generators.</p>
+
+- question: How can I support or contribute to the project?
   answer:
-    <p>Take a look at the <a href="https://sdk-fabric.org/submit">Submit</a> page to see how you can submit your
-    specification. Also feel free to <a href="https://www.apioo.de/en/contact">contact us</a> if you are interested in
-    using our service for your company API so that we know that there is a demand for such a service.</p>
-- question: I have found a problem in the generated SDK?
+    <p>The best way to support SDK Fabric is to use the SDKs in your projects and star our repositories on GitHub. You can also contribute directly by adding missing endpoints or data models to our open <a href="https://app.typehub.cloud/d/sdkfabric">specifications on TypeHub</a>. If you would like to support us financially, please check out our <a href="https://github.com/sponsors/chriskapp">GitHub Sponsors page</a>.</p>
+
+- question: How can my company leverage SDK Fabric?
   answer:
-    <p>If you have found a problem in the generated SDK please create an issue directly at our
-    <a href="https://github.com/sdk-fabric/website">GitHub repository</a>. For private topics you can also use our
-    <a href="https://www.apioo.de/en/contact">contact form</a>.</p>
-- question: Can we work together?
+    <p>Getting started is straightforward, simply <a href="https://app.sdk-fabric.org/register">create an account</a>, log in to the dashboard, and register your first project. Once configured, SDK Fabric will generate and synchronize SDKs across your supported languages. If you need assistance with the integration, feel free to <a href="https://www.apioo.de/en/contact">contact us directly</a>.</p>
+
+- question: How do I report an issue with a generated SDK?
   answer:
-    <p>Our project is currently in an early stage, please <a href="https://www.apioo.de/en/contact">contact us</a> if
-    you have ideas to work and grow with us.</p>
+    <p>If you encounter a bug or unexpected behavior in a generated SDK, please open an issue in our <a href="https://github.com/sdk-fabric/website">GitHub repository</a>. For private inquiries or security concerns, you can reach us via our <a href="https://www.apioo.de/en/contact">contact form</a>.</p>
+
+- question: Are you open to partnerships or collaboration?
+  answer:
+    <p>Yes! We are actively building and expanding the SDK Fabric ecosystem. If you have ideas for integration, partnership opportunities, or strategic collaboration, please <a href="https://www.apioo.de/en/contact">get in touch</a>.</p>

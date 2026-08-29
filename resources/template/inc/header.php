@@ -39,7 +39,6 @@
   </div>
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>">Submit</a>
       <a class="navbar-item" href="<?php echo $router->getAbsolutePath([\App\Controller\Faq::class, 'show']); ?>">FAQ</a>
     </div>
   </div>
@@ -49,6 +48,7 @@
   <div class="container">
     <h1 class="title has-text-light">SDK Fabric</h1>
     <p class="subtitle has-text-light">An open infrastructure to automatically generate SDKs.</p>
-    <a href="<?php echo $router->getAbsolutePath([\App\Controller\Submit::class, 'show']); ?>" class="button is-primary">Submit</a>
+    <a href="https://app.sdk-fabric.org/register" class="button is-primary">Sign up</a>
+    <a href="https://app.sdk-fabric.org/login" class="button">Login</a>
   </div>
 </section>

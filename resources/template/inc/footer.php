@@ -28,7 +28,7 @@
         <aside class="menu">
           <p class="menu-label">API</p>
           <ul class="menu-list">
-            <li><a href="<?php echo $base; ?>/projects.json" class="panel-block">Projects</a></li>
+            <li><a href="https://api.sdk-fabric.org/explore" class="panel-block">Projects</a></li>
           </ul>
         </aside>
       </div>
