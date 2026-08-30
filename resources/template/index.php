@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchProjects(query = '') {
         try {
-            const url = new URL('http://dev.apioo.de/website/sdk-fabric.org/backend/public/index.php/explore');
+            const url = new URL('https://api.sdk-fabric.org/explore');
             if (query.trim()) {
                 url.searchParams.set('search', query.trim());
             }
