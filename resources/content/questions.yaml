@@ -1,28 +1,84 @@
-- question: What problem does SDK Fabric solve?
-  answer:
-    <p>Integrating external APIs into your application is often complicated and time-consuming. Every service provides its own SDK with different behaviors, and many APIs lack official SDKs for your target language, forcing developers to rely on community-maintained libraries that frequently become outdated or abandoned.</p>
-    <p>SDK Fabric solves this by providing an open infrastructure to automatically generate and maintain high-quality SDKs for popular APIs across all major programming languages. By maintaining API specifications on <a href="https://typehub.cloud/">TypeHub</a>, we automatically build, test, and publish generated SDKs directly to native package managers. TypeHub’s visual editor also allows both developers and non-technical contributors to build and refine API specs easily.</p>
+- category: Basics
+  question: What is SDK Fabric?
+  answer: |
+    <p>SDK Fabric is an open service which automatically generates and maintains SDKs (client libraries) for popular APIs like OpenAI, Slack, Discord or Twilio.
+    Instead of writing HTTP requests by hand, you install the SDK for your programming language and call the API through typed classes and methods.</p>
+    <p>All SDKs are generated from the same specification, so the SDK for every language is structured the same way and always covers the same endpoints.</p>
 
-- question: How does the service work?
-  answer:
-    <p>To integrate your SDK repository with SDK Fabric, you add a <code>sync.yml</code> GitHub Action to your repository and register it in our application. By providing a Personal Access Token (PAT), SDK Fabric can automatically trigger workflows to roll out dependency updates, code improvements, and security patches across your managed SDK repositories seamlessly.</p>
+- category: Basics
+  question: What problem does SDK Fabric solve?
+  answer: |
+    <p>Integrating an external API is often more work than it should be. Every service ships its own SDK with different conventions, and many APIs have
+    no official SDK for your language at all. In that case you have to rely on community libraries, which are often incomplete, outdated or abandoned.</p>
+    <p>SDK Fabric fixes this by describing each API once in a specification and generating the SDKs for all supported languages from it. When the API
+    changes, only the specification needs to be updated and all SDKs are regenerated automatically.</p>
 
-- question: Why isn't my programming language supported yet?
-  answer:
-    <p>We currently focus on six core languages C#, Go, Java, JavaScript, PHP, and Python. We prioritize expandability based on developer interest, if there is strong demand for an additional target language, we are eager to extend our code generators.</p>
+- category: Basics
+  question: Which programming languages are supported?
+  answer: |
+    <p>We currently generate SDKs for <strong>C#</strong>, <strong>Go</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> and <strong>Python</strong>.</p>
+    <p>Your language is missing? We add new languages based on demand, so please <a href="https://www.apioo.de/en/contact">let us know</a> which language you need.</p>
 
-- question: How can I support or contribute to the project?
-  answer:
-    <p>The best way to support SDK Fabric is to use the SDKs in your projects and star our repositories on GitHub. You can also contribute directly by adding missing endpoints or data models to our open <a href="https://app.typehub.cloud/d/sdkfabric">specifications on TypeHub</a>. If you would like to support us financially, please check out our <a href="https://github.com/sponsors/chriskapp">GitHub Sponsors page</a>.</p>
+- category: Basics
+  question: How are the SDKs generated?
+  answer: |
+    <ol>
+      <li>Every API is described by a specification which is maintained at the <a href="https://github.com/sdk-fabric/specs">sdk-fabric/specs</a> repository.</li>
+      <li>SDK Fabric uses the <a href="https://sdkgen.app/">SDKgen</a> code generator to create the client code for every supported language.</li>
+      <li>The generated code is pushed to a dedicated GitHub repository for each language, e.g. <code>twilio-php</code> or <code>twilio-python</code>.</li>
+    </ol>
+    <p>This means the SDK repositories only contain generated code and are kept up to date automatically.</p>
 
-- question: How can my company leverage SDK Fabric?
-  answer:
-    <p>Getting started is straightforward, simply <a href="https://app.sdk-fabric.org/register">create an account</a>, log in to the dashboard, and register your first project. Once configured, SDK Fabric will generate and synchronize SDKs across your supported languages. If you need assistance with the integration, feel free to <a href="https://www.apioo.de/en/contact">contact us directly</a>.</p>
+- category: Using the SDKs
+  question: How do I use an SDK?
+  answer: |
+    <p>Search for the service on our <a href="https://sdk-fabric.org/">projects overview</a> and click on the language you need. This brings you to the
+    GitHub repository of the SDK, where the README describes how to install the package and how to make your first call.</p>
 
-- question: How do I report an issue with a generated SDK?
-  answer:
-    <p>If you encounter a bug or unexpected behavior in a generated SDK, please open an issue in our <a href="https://github.com/sdk-fabric/website">GitHub repository</a>. For private inquiries or security concerns, you can reach us via our <a href="https://www.apioo.de/en/contact">contact form</a>.</p>
+- category: Using the SDKs
+  question: How do I report an issue with a generated SDK?
+  answer: |
+    <p>If you encounter a bug or unexpected behavior in a generated SDK, please open an issue in our <a href="https://github.com/sdk-fabric/website">GitHub repository</a>.
+    For private inquiries or security concerns, you can reach us via our <a href="https://www.apioo.de/en/contact">contact form</a>.</p>
 
-- question: Are you open to partnerships or collaboration?
-  answer:
-    <p>Yes! We are actively building and expanding the SDK Fabric ecosystem. If you have ideas for integration, partnership opportunities, or strategic collaboration, please <a href="https://www.apioo.de/en/contact">get in touch</a>.</p>
+- category: Contributing
+  question: An endpoint is missing or wrong, can I fix it directly in the SDK repository?
+  answer: |
+    <p>Please don't. The SDK repositories only contain generated code, so every manual change is overwritten on the next generation run.</p>
+    <p>Instead, update the specification of the service at the <a href="https://github.com/sdk-fabric/specs">sdk-fabric/specs</a> repository. Once your change
+    is merged, the SDKs for all languages are regenerated automatically, so your fix is available in every language at once.</p>
+
+- category: Contributing
+  question: How can I add an SDK for a new service?
+  answer: |
+    <p>Add a new specification for the service to the <a href="https://github.com/sdk-fabric/specs">sdk-fabric/specs</a> repository and open a pull request.
+    Once it is merged, SDK Fabric generates the SDKs for all supported languages.</p>
+
+- category: Contributing
+  question: How can I support the project?
+  answer: |
+    <ul>
+      <li>Use the SDKs in your projects and star the repositories on GitHub.</li>
+      <li>Improve the existing specifications or add new ones at the <a href="https://github.com/sdk-fabric/specs">specs repository</a>.</li>
+      <li>Support us financially through <a href="https://github.com/sponsors/chriskapp">GitHub Sponsors</a>.</li>
+    </ul>
+
+- category: For companies
+  question: Can I use SDK Fabric for my own API?
+  answer: |
+    <p>Yes. <a href="https://app.sdk-fabric.org/register">Create an account</a>, log in to the dashboard and register your project. SDK Fabric then generates
+    the SDKs for your API and keeps them in sync across all supported languages. If you need help with the setup, feel free to
+    <a href="https://www.apioo.de/en/contact">contact us</a>.</p>
+
+- category: For companies
+  question: How does SDK Fabric update my SDK repositories?
+  answer: |
+    <p>You add a <code>sync.yml</code> GitHub Action to each of your SDK repositories and register the repository in the SDK Fabric app together with a
+    Personal Access Token (PAT). SDK Fabric then triggers this workflow whenever there is something to update, e.g. a changed specification, dependency
+    updates, code improvements or security patches.</p>
+
+- category: For companies
+  question: Are you open to partnerships or collaboration?
+  answer: |
+    <p>Yes! We are actively growing the SDK Fabric ecosystem. If you have ideas for an integration, a partnership or any other kind of collaboration,
+    please <a href="https://www.apioo.de/en/contact">get in touch</a>.</p>
