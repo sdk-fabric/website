@@ -10,7 +10,8 @@
   <link rel="preload" href="<?php echo $base; ?>/js/app.min.js" as="script" />
   <link rel="stylesheet" href="<?php echo $base; ?>/css/app.min.css">
   <link rel="canonical" href="<?php echo $router->getUrl($method, (array) ($urlParameters ?? [])); ?>">
-  <link rel="icon" type="image/png" href="<?php echo $base; ?>/img/logo/logo_white.png">
+  <link rel="icon" type="image/png" href="<?php echo $base; ?>/img/logo_small.png">
+  <link rel="apple-touch-icon" href="<?php echo $base; ?>/img/logo.png">
   <script async src="<?php echo $base; ?>/js/app.min.js"></script>
   <script>
     var _paq = window._paq = window._paq || [];
@@ -29,7 +30,7 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="<?php echo $url; ?>"><b>SDK Fabric</b></a>
+    <a class="navbar-item sf-brand" href="<?php echo $url; ?>"><img src="<?php echo $base; ?>/img/logo_small.png" class="sf-logo" width="28" height="28" alt=""><b>SDK Fabric</b></a>
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -45,10 +46,13 @@
 </nav>
 
 <section class="section sdk-fabric-header">
-  <div class="container">
-    <h1 class="title has-text-light">SDK Fabric</h1>
-    <p class="subtitle has-text-light">An open infrastructure to automatically generate SDKs.</p>
-    <a href="https://app.sdk-fabric.org/register" class="button is-primary">Sign up</a>
-    <a href="https://app.sdk-fabric.org/login" class="button">Login</a>
+  <div class="container sf-header-inner">
+    <img src="<?php echo $base; ?>/img/logo.png" class="sf-logo sf-header-logo" width="112" height="112" alt="SDK Fabric logo">
+    <div>
+      <h1 class="title has-text-light">SDK Fabric</h1>
+      <p class="subtitle has-text-light">An open infrastructure to automatically generate SDKs.</p>
+      <a href="https://app.sdk-fabric.org/register" class="button is-primary">Sign up</a>
+      <a href="https://app.sdk-fabric.org/login" class="button">Login</a>
+    </div>
   </div>
 </section>

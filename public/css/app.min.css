@@ -342,3 +342,43 @@ a.sf-lang:hover {
     width: 100%;
   }
 }
+
+/* Logo */
+.sf-logo {
+  border-radius: 50%;
+  clip-path: circle(47%);
+}
+
+.sf-brand {
+  gap: 0.5rem;
+}
+
+.sf-brand .sf-logo {
+  max-height: 28px;
+}
+
+.sf-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sf-header-logo {
+  flex: 0 0 auto;
+  width: 112px;
+  height: 112px;
+  filter: drop-shadow(0 0 24px rgba(64, 210, 200, 0.45)) drop-shadow(0 0 48px rgba(130, 90, 230, 0.35));
+}
+
+@media screen and (max-width: 768px) {
+  .sf-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .sf-header-logo {
+    width: 80px;
+    height: 80px;
+  }
+}
