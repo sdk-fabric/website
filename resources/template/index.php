@@ -127,6 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 return acc;
             }, {});
 
+            const typeHubUrl = `https://app.typehub.cloud/d/${encodeURIComponent(project.typeHubUser)}/${encodeURIComponent(project.typeHubDocument)}`;
+
             const langCells = languages.map(lang => {
                 const config = configMap[lang];
                 if (config && config.githubUser && config.githubRepository) {
@@ -140,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             return `
                 <tr>
-                    <td><strong>${escapeHtml(fullName)}</strong></td>
+                    <td><a href="${typeHubUrl}" target="_blank" rel="noopener noreferrer"><strong>${escapeHtml(fullName)}</strong></a></td>
                     ${langCells}
                 </tr>
             `;
