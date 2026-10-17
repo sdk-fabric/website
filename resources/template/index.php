@@ -67,6 +67,30 @@
   </div>
 </section>
 
+<hr>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title">Contribute</h2>
+    <div class="content">
+      <p>The SDK repositories listed above only contain the automatically generated client code, which means
+      you should not change the code inside these repositories directly, since every change is overwritten
+      on the next generation run. All SDKs are generated from a specification which is maintained at the
+      <a href="https://github.com/sdk-fabric/specs" target="_blank" rel="noopener noreferrer">sdk-fabric/specs</a> repository.</p>
+      <ul>
+        <li><strong>Change an existing SDK:</strong> Update the corresponding spec at the specs repository, after
+        the change is merged the SDKs for all languages are regenerated automatically.</li>
+        <li><strong>Add a new SDK:</strong> Add a new spec for the service to the specs repository, once it is merged
+        SDK Fabric generates the SDKs for all supported languages.</li>
+      </ul>
+      <p><a class="button is-primary" href="https://github.com/sdk-fabric/specs" target="_blank" rel="noopener noreferrer">
+        <span class="icon"><i class="fab fa-github"></i></span>
+        <span>Go to the specs repository</span>
+      </a></p>
+    </div>
+  </div>
+</section>
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     const tableBody = document.getElementById('projects-table-body');
